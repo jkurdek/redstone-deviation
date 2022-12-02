@@ -1,7 +1,7 @@
 # Token deviation analysis
 Script for fetching historical values of tokens and anylysing their maximum deviation.
 
-## Requirments
+## Requirements
 - Python
 
 ## Set-up
