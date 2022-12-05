@@ -13,6 +13,7 @@ Alternatively:
 ```
 pip install pandas
 pip install pymongo
+pip install matplotlib
 ```
 - Create variable storing mongoDB key
 ``` 
