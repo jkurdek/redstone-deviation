@@ -6,9 +6,14 @@ import pandas as pd
 from pymongo import MongoClient
 from pymongo.collection import Collection
 
+import matplotlib.pyplot as plt
+
+plt.style.use("ggplot")
+
 CONNECTION_STRING = os.getenv("CONNECTION_STRING")
 MAX_PROCESSES = 4
 DATA_DIR = "data"
+PLOTS_DIR = "plots"
 DB_NAME = "redstone"
 COLLECTION_NAME = "prices"
 PROVIDER = "TEHhCDWy-vGmPSZsYJyM0aP_MM4xESgyIZdf5mVODzg"
@@ -61,6 +66,28 @@ def get_deviation(val1: float, val2: float) -> float:
     return 100 * abs(val1 - val2) / min(val2, val1)
 
 
+def plot_prices_with_max_deviation(symbol: str, values: pd.DataFrame, max_deviations: list) -> None:
+    plt.figure(figsize=(40, 10))
+    plt.title(f"{symbol} Value")
+    plt.plot(values.index, values["value"], label="Value", color="blue")
+    plt.xlabel("Time", fontsize=14)
+    plt.ylabel("Value", fontsize=14)
+
+    colors = ["red", "green", "orange", "purple", "brown", "pink"]
+    line_styles = [(0, (1, 10)), (0, (5, 10)), (0, (3, 10, 1, 10)), (0, (3, 10, 1, 10, 1, 10)), "-"]
+    for interval, max_deviation, color, style in zip(INTERVALS, max_deviations, colors, line_styles):
+        plt.axvline(
+            x=max_deviation[0],
+            label=f"Max Deviation ({interval}): {max_deviation[1]:0.2f}%",
+            color=color,
+            linestyle=style,
+            alpha=0.5,
+        )
+
+    plt.legend()
+    plt.savefig(f"{PLOTS_DIR}/{symbol}.png")
+
+
 def calculate_deviations(csv_name: str) -> None:
     df = pd.read_csv(csv_name)
 
@@ -76,11 +103,14 @@ def calculate_deviations(csv_name: str) -> None:
     message += f"Date Range: {df.index[0]} -- {df.index[-1]}\n"
     message += f"Average Interval: {(time_range / len(df))/1000:0.2f}s\n"
 
+    intervals_deviations = []
     for interval in INTERVALS:
         deviations = df.rolling(interval).apply(lambda x: get_deviation(x[0], x[-1]))
+        intervals_deviations.append([deviations.idxmax()[0], deviations.max()[0]])
         message += f"Interval: {interval}, Max Deviation: {deviations.max()[0]:0.2f}%, Max Deviation Interval End: {deviations.idxmax()[0]}\n"
 
     print(message)
+    plot_prices_with_max_deviation(symbol, df, intervals_deviations)
 
 
 def main():
