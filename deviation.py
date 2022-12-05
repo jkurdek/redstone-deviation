@@ -1,4 +1,5 @@
 import os
+from multiprocessing import Pool
 from multiprocessing.dummy import Pool as ThreadPool
 
 import pandas as pd
@@ -6,6 +7,7 @@ from pymongo import MongoClient
 from pymongo.collection import Collection
 
 CONNECTION_STRING = os.getenv("CONNECTION_STRING")
+MAX_PROCESSES = 4
 DATA_DIR = "data"
 DB_NAME = "redstone"
 COLLECTION_NAME = "prices"
@@ -60,25 +62,36 @@ def get_deviation(val1: float, val2: float) -> float:
 
 
 def calculate_deviations(csv_name: str) -> None:
-    print("\n\n")
     df = pd.read_csv(csv_name)
+
+    time_range = df["timestamp"].max() - df["timestamp"].min()
     df["timestamp"] = pd.to_datetime(df["timestamp"], unit="ms", origin="unix")
     df = df.set_index("timestamp")
     symbol = csv_name.split("/")[-1].split(".")[0]
+
+    message = "\n\n"
+
+    message += f"Symbol: {symbol}\n"
+    message += f"Data Points: {len(df)}\n"
+    message += f"Date Range: {df.index[0]} -- {df.index[-1]}\n"
+    message += f"Average Interval: {(time_range / len(df))/1000:0.2f}s\n"
+
     for interval in INTERVALS:
         deviations = df.rolling(interval).apply(lambda x: get_deviation(x[0], x[-1]))
-        print(
-            f"{symbol}: Interval: {interval}, Max Deviation: {deviations.max()[0]:0.2f}%, Max Deviation Interval End: {deviations.idxmax()[0]}"
-        )
+        message += f"Interval: {interval}, Max Deviation: {deviations.max()[0]:0.2f}%, Max Deviation Interval End: {deviations.idxmax()[0]}\n"
+
+    print(message)
 
 
 def main():
     pool = ThreadPool(len(SYMBOLS))
 
     files = pool.map(get_values_to_csv, SYMBOLS)
+    pool.close()
+    pool.join()
 
-    for name in files:
-        calculate_deviations(name)
+    pool_mp = Pool(MAX_PROCESSES)
+    pool_mp.map(calculate_deviations, files)
 
 
 if __name__ == "__main__":
