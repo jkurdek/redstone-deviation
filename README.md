@@ -24,6 +24,10 @@ export CONNECTION_STRING=<KEY>
 ```
 python deviation.py
 ```
-
 ***NOTE***: The script will take some time to fetch all the data.
+
+## Examples
+
+Sample results and plots can be found in the `results` directory.
+
 
