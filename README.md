@@ -14,6 +14,7 @@ Alternatively:
 pip install pandas
 pip install pymongo
 pip install matplotlib
+pip install numba
 ```
 - Create variable storing mongoDB key
 ``` 
