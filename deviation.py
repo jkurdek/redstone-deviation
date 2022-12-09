@@ -53,15 +53,19 @@ def get_values_to_csv(symbol: str) -> str:
     db = get_db()
     collection = db[COLLECTION_NAME]
     cursor = collection.find(
-        {"symbol": symbol, "provider": PROVIDER}, {"timestamp": 1, "_id": False, "value": 1}
+        {"symbol": symbol, "provider": PROVIDER}, {"timestamp": 1, "_id": False, "value": 1, "source": 1}
     ).batch_size(20000)
 
     csv_name = f"{DATA_DIR}/{symbol}.csv"
     print(f"Fetching prices for: {symbol}")
     with open(csv_name, "w") as f:
-        f.write("timestamp,value\n")
+        f.write("timestamp,value,total_sources,error_sources\n")
         for doc in cursor:
-            f.write(f"{doc['timestamp']},{doc['value']}\n")
+            errors, total = -1, -1
+            if "source" in doc:
+                errors = sum([1 for v in doc["source"].values() if v == "error"])
+                total = len(doc["source"])
+            f.write(f"{doc['timestamp']},{doc['value']}, {total}, {errors}\n")
 
     return csv_name
 
@@ -132,6 +136,25 @@ def get_outliers(df: pd.DataFrame):
     return outliers
 
 
+def plot_values_and_sources(title: str, df: pd.DataFrame):
+    df_valid = df[df["total_sources"] > 0].copy()
+    df_valid["error_ratio"] = df_valid["error_sources"] / df_valid["total_sources"]
+
+    fig, (ax1, ax2) = plt.subplots(2, 1, sharex=True, figsize=(80, 20))
+    fig.suptitle(title)
+
+    ax1.plot(df_valid.index, df_valid["value"], label="Value", color="blue")
+    ax1.set_ylabel("Value", fontsize=14)
+
+    ax2.scatter(df_valid.index, df_valid["error_ratio"], label="Error sources ratio", color="red", s=4)
+    ax2.set_ylabel("Sources Error Ratio", fontsize=14)
+    ax2.set_xlabel("Time", fontsize=14)
+    ax2.set_ylim(0, 1)
+
+    plt.legend()
+    fig.savefig(f"{PLOTS_DIR}/{title.replace(' ', '_')}.png")
+
+
 def plot_prices_with_outliers(title: str, values: pd.DataFrame, outliers: pd.DataFrame) -> None:
     plt.figure(figsize=(40, 10))
     plt.title(title)
@@ -170,25 +193,27 @@ def process_values(csv_name: str) -> None:
     message += f"Date Range: {df.index[0]} -- {df.index[-1]}\n"
     message += f"Average Interval: {(time_range / len(df))/1000:0.2f}s\n"
 
-    intervals_deviations = calculate_deviations(df)
-    plot_prices_with_max_deviation(symbol, df, intervals_deviations)
+    df_vals = df.loc[:, ["value"]]
+    intervals_deviations = calculate_deviations(df_vals)
+    plot_values_and_sources(f"{symbol} source error", df)
+    plot_prices_with_max_deviation(symbol, df_vals, intervals_deviations)
 
     for (time, deviation), interval in zip(intervals_deviations, INTERVALS):
         message += f"Interval: {interval}, Max Deviation: {deviation:0.2f}%, Max Deviation Interval End: {time}\n"
 
-    outliers = get_outliers(df)
+    outliers = get_outliers(df_vals)
 
     if len(outliers) > 0:
-        plot_prices_with_outliers(symbol, df, outliers)
+        plot_prices_with_outliers(symbol, df_vals, outliers)
         outlier_data = fetch_data_on_records(outliers, symbol)
         message += f"\n\nOutliers for {symbol}:\n"
         for outlier in outlier_data:
             message += f"{outlier}\n"
         message += "\n\n"
 
-        df = df.drop(outliers.index)
-        intervals_deviations = calculate_deviations(df)
-        plot_prices_with_max_deviation(f"{symbol} outliers removed", df, intervals_deviations)
+        df_vals = df_vals.drop(outliers.index)
+        intervals_deviations = calculate_deviations(df_vals)
+        plot_prices_with_max_deviation(f"{symbol} outliers removed", df_vals, intervals_deviations)
 
         message += f"Symbol: {symbol} outliers removed\n"
         for (time, deviation), interval in zip(intervals_deviations, INTERVALS):
