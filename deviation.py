@@ -138,7 +138,6 @@ def get_outliers(df: pd.DataFrame):
 
 def plot_values_and_sources(title: str, df: pd.DataFrame):
     df_valid = df[df["total_sources"] > 0].copy()
-    df_valid["error_ratio"] = df_valid["error_sources"] / df_valid["total_sources"]
 
     fig, (ax1, ax2) = plt.subplots(2, 1, sharex=True, figsize=(80, 20))
     fig.suptitle(title)
@@ -146,10 +145,10 @@ def plot_values_and_sources(title: str, df: pd.DataFrame):
     ax1.plot(df_valid.index, df_valid["value"], label="Value", color="blue")
     ax1.set_ylabel("Value", fontsize=14)
 
-    ax2.scatter(df_valid.index, df_valid["error_ratio"], label="Error sources ratio", color="red", s=4)
-    ax2.set_ylabel("Sources Error Ratio", fontsize=14)
+    ax2.scatter(df_valid.index, df_valid["total_sources"], label="Total sources", color="blue", s=4)
+    ax2.scatter(df_valid.index, df_valid["error_sources"], label="Error sources", color="red", s=4)
+    ax2.set_ylabel("Sources", fontsize=14)
     ax2.set_xlabel("Time", fontsize=14)
-    ax2.set_ylim(0, 1)
 
     plt.legend()
     fig.savefig(f"{PLOTS_DIR}/{title.replace(' ', '_')}.png")
@@ -195,7 +194,7 @@ def process_values(csv_name: str) -> None:
 
     df_vals = df.loc[:, ["value"]]
     intervals_deviations = calculate_deviations(df_vals)
-    plot_values_and_sources(f"{symbol} source error", df)
+    plot_values_and_sources(f"{symbol} sources", df)
     plot_prices_with_max_deviation(symbol, df_vals, intervals_deviations)
 
     for (time, deviation), interval in zip(intervals_deviations, INTERVALS):
