@@ -4,7 +4,6 @@ from multiprocessing.dummy import Pool as ThreadPool
 from typing import List, Tuple
 
 import matplotlib.pyplot as plt
-import numpy as np
 import pandas as pd
 from pymongo import MongoClient
 from pymongo.collection import Collection
@@ -94,10 +93,6 @@ def fetch_data_on_records(df: pd.DataFrame, symbol: str) -> List[dict]:
     return data
 
 
-def get_deviation(x: np.ndarray) -> float:
-    return 100 * abs(x[0] - x[-1]) / min(x[0], x[-1])
-
-
 def plot_prices_with_max_deviation(title: str, values: pd.DataFrame, max_deviations: list) -> None:
     plt.figure(figsize=(40, 10))
     plt.title(title)
@@ -170,7 +165,10 @@ def plot_prices_with_outliers(title: str, values: pd.DataFrame, outliers: pd.Dat
 def calculate_deviations(df: pd.DataFrame) -> List[Tuple[float, float]]:
     intervals_deviations = []
     for interval in INTERVALS:
-        deviations = df.rolling(interval).apply(get_deviation, engine="numba", raw=True)
+        deviations_roll = df.rolling(interval)
+        roll_min = deviations_roll.min()
+        roll_max = deviations_roll.max()
+        deviations = 100 * (roll_max - roll_min) / roll_min
         intervals_deviations.append([deviations.idxmax()[0], deviations.max()[0]])
 
     return intervals_deviations

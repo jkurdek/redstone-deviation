@@ -1,194 +1,14 @@
 
 
-Symbol: PNG
-Data Points: 2223533
-Date Range: 2022-07-03 05:54:13.253000 -- 2022-12-02 21:27:24.502000
-Average Interval: 5.93s
-Interval: 5min, Max Deviation: 25.21%, Max Deviation Interval End: 2022-09-12 14:12:46.058000
-Interval: 10min, Max Deviation: 38.18%, Max Deviation Interval End: 2022-09-12 14:17:23.682000
-Interval: 30min, Max Deviation: 42.07%, Max Deviation Interval End: 2022-09-12 14:33:36.289000
-Interval: 1H, Max Deviation: 51.28%, Max Deviation Interval End: 2022-09-12 14:42:03.928000
-Interval: 1D, Max Deviation: 61.41%, Max Deviation Interval End: 2022-09-12 14:42:03.928000
-
-
-
-Symbol: AVAX
-Data Points: 3427444
-Date Range: 2022-02-07 02:09:27.393000 -- 2022-12-02 21:36:34.538000
-Average Interval: 7.53s
-Interval: 5min, Max Deviation: 24.44%, Max Deviation Interval End: 2022-05-11 12:51:58.710000
-Interval: 10min, Max Deviation: 29.91%, Max Deviation Interval End: 2022-05-11 12:51:58.710000
-Interval: 30min, Max Deviation: 43.45%, Max Deviation Interval End: 2022-05-11 12:51:58.710000
-Interval: 1H, Max Deviation: 42.73%, Max Deviation Interval End: 2022-05-11 12:51:58.710000
-Interval: 1D, Max Deviation: 85.76%, Max Deviation Interval End: 2022-05-11 12:51:58.710000
-
-
-
-Symbol: YAK
-Data Points: 3407297
-Date Range: 2022-02-07 02:35:06.781000 -- 2022-12-02 21:34:34.530000
-Average Interval: 7.58s
-Interval: 5min, Max Deviation: 33.53%, Max Deviation Interval End: 2022-05-22 23:04:40.852000
-Interval: 10min, Max Deviation: 33.64%, Max Deviation Interval End: 2022-05-22 23:09:30.915000
-Interval: 30min, Max Deviation: 34.65%, Max Deviation Interval End: 2022-05-22 23:04:20.846000
-Interval: 1H, Max Deviation: 36.22%, Max Deviation Interval End: 2022-05-22 23:20:21.064000
-Interval: 1D, Max Deviation: 68.13%, Max Deviation Interval End: 2022-05-12 05:32:26.124000
-
-
-
-Symbol: QI
-Data Points: 2223533
-Date Range: 2022-07-03 05:54:13.253000 -- 2022-12-02 21:27:24.502000
-Average Interval: 5.93s
-Interval: 5min, Max Deviation: 17.80%, Max Deviation Interval End: 2022-10-15 22:44:36.648000
-Interval: 10min, Max Deviation: 23.95%, Max Deviation Interval End: 2022-11-23 18:34:31.909000
-Interval: 30min, Max Deviation: 45.66%, Max Deviation Interval End: 2022-11-23 18:39:01.915000
-Interval: 1H, Max Deviation: 43.99%, Max Deviation Interval End: 2022-11-23 18:39:01.915000
-Interval: 1D, Max Deviation: 64.41%, Max Deviation Interval End: 2022-11-23 22:30:02.175000
-
-
-
-Symbol: ETH
-Data Points: 3427336
-Date Range: 2022-02-07 02:35:06.781000 -- 2022-12-02 21:37:24.540000
-Average Interval: 7.53s
-Interval: 5min, Max Deviation: 9.22%, Max Deviation Interval End: 2022-11-10 13:34:29.762000
-Interval: 10min, Max Deviation: 12.17%, Max Deviation Interval End: 2022-06-15 18:45:46.831000
-Interval: 30min, Max Deviation: 14.24%, Max Deviation Interval End: 2022-06-15 18:45:46.831000
-Interval: 1H, Max Deviation: 13.43%, Max Deviation Interval End: 2022-06-15 19:10:37.164000
-Interval: 1D, Max Deviation: 35.34%, Max Deviation Interval End: 2022-11-09 16:34:43.568000
-
-
-
-Symbol: USDT
-Data Points: 3427310
-Date Range: 2022-02-07 02:35:06.781000 -- 2022-12-02 21:36:34.538000
-Average Interval: 7.53s
-Interval: 5min, Max Deviation: 100.37%, Max Deviation Interval End: 2022-05-12 05:09:41.206000
-Interval: 10min, Max Deviation: 100.69%, Max Deviation Interval End: 2022-05-12 05:17:55.089000
-Interval: 30min, Max Deviation: 100.87%, Max Deviation Interval End: 2022-05-12 05:37:17.591000
-Interval: 1H, Max Deviation: 100.41%, Max Deviation Interval End: 2022-05-12 05:09:41.206000
-Interval: 1D, Max Deviation: 100.77%, Max Deviation Interval End: 2022-05-12 05:09:41.206000
-
-
-Outliers for USDT:
-{'source': {'binanceus': 'error', 'bitfinex': 'error', 'bitfinex2': 'error', 'bittrex': 'error', 'cex': 'error', 'coingecko': 'error', 'currencycom': 'error', 'ftx': 'error', 'kraken': 'error', 'okcoin': 'error', 'kyber': 'error', 'sushiswap': 0.49801987239337686, 'uniswap': 'error'}, 'timestamp': 1652332181206.0, 'value': 0.49801987239337686, 'timestamp_human': Timestamp('2022-05-12 05:09:41.206000128')}
-
-
-Symbol: USDT outliers removed
-Interval: 5min, Max Deviation: 3.11%, Max Deviation Interval End: 2022-05-12 07:22:02.081000
-Interval: 10min, Max Deviation: 3.20%, Max Deviation Interval End: 2022-05-12 07:22:02.081000
-Interval: 30min, Max Deviation: 3.30%, Max Deviation Interval End: 2022-05-12 07:23:08.274000
-Interval: 1H, Max Deviation: 2.91%, Max Deviation Interval End: 2022-05-12 07:22:02.081000
-Interval: 1D, Max Deviation: 3.90%, Max Deviation Interval End: 2022-05-12 07:22:02.081000
-
-
-
-Symbol: TJ_AVAX_USDC_LP
-Data Points: 941107
-Date Range: 2022-10-05 09:37:30.113000 -- 2022-12-02 21:09:44.425000
-Average Interval: 5.37s
-Interval: 5min, Max Deviation: 2.58%, Max Deviation Interval End: 2022-11-10 13:37:29.800000
-Interval: 10min, Max Deviation: 2.69%, Max Deviation Interval End: 2022-11-10 13:38:16.118000
-Interval: 30min, Max Deviation: 3.76%, Max Deviation Interval End: 2022-11-08 18:22:00.620000
-Interval: 1H, Max Deviation: 4.46%, Max Deviation Interval End: 2022-11-08 18:22:00.620000
-Interval: 1D, Max Deviation: 13.28%, Max Deviation Interval End: 2022-11-09 16:39:53.616000
-
-
-
-Symbol: PNG_AVAX_USDC_LP
-Data Points: 941107
-Date Range: 2022-10-05 09:37:30.113000 -- 2022-12-02 21:09:44.425000
-Average Interval: 5.37s
-Interval: 5min, Max Deviation: 2.58%, Max Deviation Interval End: 2022-11-10 13:37:29.800000
-Interval: 10min, Max Deviation: 2.68%, Max Deviation Interval End: 2022-11-10 13:38:16.118000
-Interval: 30min, Max Deviation: 3.76%, Max Deviation Interval End: 2022-11-08 18:22:02.151000
-Interval: 1H, Max Deviation: 4.46%, Max Deviation Interval End: 2022-11-08 18:22:12.154000
-Interval: 1D, Max Deviation: 13.39%, Max Deviation Interval End: 2022-11-09 21:56:06.708000
-
-
-
-Symbol: XAVA
-Data Points: 3407255
-Date Range: 2022-02-07 02:09:27.393000 -- 2022-12-02 21:34:34.530000
-Average Interval: 7.58s
-Interval: 5min, Max Deviation: 75.49%, Max Deviation Interval End: 2022-05-08 11:06:51.879000
-Interval: 10min, Max Deviation: 75.57%, Max Deviation Interval End: 2022-05-08 11:11:51.916000
-Interval: 30min, Max Deviation: 75.54%, Max Deviation Interval End: 2022-05-08 11:32:12.075000
-Interval: 1H, Max Deviation: 75.05%, Max Deviation Interval End: 2022-05-08 12:01:38.306000
-Interval: 1D, Max Deviation: 84.75%, Max Deviation Interval End: 2022-05-08 11:02:16.731000
-
-
-
-Symbol: LINK
-Data Points: 2223534
-Date Range: 2022-07-03 05:54:13.253000 -- 2022-12-02 21:27:24.502000
-Average Interval: 5.93s
-Interval: 5min, Max Deviation: 9.33%, Max Deviation Interval End: 2022-11-08 19:38:51.385000
-Interval: 10min, Max Deviation: 12.38%, Max Deviation Interval End: 2022-11-08 19:33:01.323000
-Interval: 30min, Max Deviation: 16.69%, Max Deviation Interval End: 2022-11-08 19:33:02.960000
-Interval: 1H, Max Deviation: 19.96%, Max Deviation Interval End: 2022-11-08 19:33:42.971000
-Interval: 1D, Max Deviation: 47.02%, Max Deviation Interval End: 2022-11-09 16:27:55.922000
-
-
-
-Symbol: USDC
-Data Points: 2618125
-Date Range: 2022-02-07 02:35:06.781000 -- 2022-12-02 21:27:24.502000
-Average Interval: 9.86s
-Interval: 5min, Max Deviation: 1.04%, Max Deviation Interval End: 2022-11-10 12:21:48.939000
-Interval: 10min, Max Deviation: 0.96%, Max Deviation Interval End: 2022-11-10 12:22:28.944000
-Interval: 30min, Max Deviation: 1.23%, Max Deviation Interval End: 2022-11-10 12:19:18.910000
-Interval: 1H, Max Deviation: 1.72%, Max Deviation Interval End: 2022-11-10 13:51:49.951000
-Interval: 1D, Max Deviation: 1.72%, Max Deviation Interval End: 2022-11-11 12:51:49.907000
-
-
-
-Symbol: YYAV3SA1
-Data Points: 1751358
-Date Range: 2022-08-16 11:58:16.848000 -- 2022-12-02 21:22:14.479000
-Average Interval: 5.35s
-Interval: 5min, Max Deviation: 7.26%, Max Deviation Interval End: 2022-09-18 21:12:01.895000
-Interval: 10min, Max Deviation: 7.86%, Max Deviation Interval End: 2022-09-18 21:12:11.896000
-Interval: 30min, Max Deviation: 8.25%, Max Deviation Interval End: 2022-09-18 21:12:11.896000
-Interval: 1H, Max Deviation: 9.11%, Max Deviation Interval End: 2022-11-08 18:21:12.142000
-Interval: 1D, Max Deviation: 29.68%, Max Deviation Interval End: 2022-11-09 21:54:46.694000
-
-
-
-Symbol: YY_TJ_AVAX_USDC_LP
-Data Points: 940600
-Date Range: 2022-10-05 12:14:17.941000 -- 2022-12-02 21:09:44.425000
-Average Interval: 5.36s
-Interval: 5min, Max Deviation: 2.58%, Max Deviation Interval End: 2022-11-10 13:38:19.810000
-Interval: 10min, Max Deviation: 2.67%, Max Deviation Interval End: 2022-11-10 13:38:19.810000
-Interval: 30min, Max Deviation: 3.76%, Max Deviation Interval End: 2022-11-08 18:23:00.630000
-Interval: 1H, Max Deviation: 4.45%, Max Deviation Interval End: 2022-11-08 18:23:00.630000
-Interval: 1D, Max Deviation: 13.26%, Max Deviation Interval End: 2022-11-09 16:41:03.625000
-
-
-
-Symbol: MOO_TJ_AVAX_USDC_LP
-Data Points: 501194
-Date Range: 2022-10-30 12:58:22.300000 -- 2022-12-02 20:57:34.369000
-Average Interval: 5.75s
-Interval: 5min, Max Deviation: 2.58%, Max Deviation Interval End: 2022-11-10 13:38:19.810000
-Interval: 10min, Max Deviation: 2.67%, Max Deviation Interval End: 2022-11-10 13:38:19.810000
-Interval: 30min, Max Deviation: 3.76%, Max Deviation Interval End: 2022-11-08 18:23:00.630000
-Interval: 1H, Max Deviation: 4.45%, Max Deviation Interval End: 2022-11-08 18:23:00.630000
-Interval: 1D, Max Deviation: 13.26%, Max Deviation Interval End: 2022-11-09 16:41:03.625000
-
-
-
 Symbol: BTC
-Data Points: 3427336
-Date Range: 2022-02-07 02:35:06.781000 -- 2022-12-02 21:37:24.540000
-Average Interval: 7.53s
-Interval: 5min, Max Deviation: 6.57%, Max Deviation Interval End: 2022-11-10 13:34:39.765000
+Data Points: 3516133
+Date Range: 2022-02-07 02:35:06.781000 -- 2022-12-09 12:31:46.306000
+Average Interval: 7.50s
+Interval: 5min, Max Deviation: 6.60%, Max Deviation Interval End: 2022-11-10 13:34:39.765000
 Interval: 10min, Max Deviation: 7.93%, Max Deviation Interval End: 2022-06-15 18:45:46.831000
-Interval: 30min, Max Deviation: 8.71%, Max Deviation Interval End: 2022-05-11 12:58:18.743000
-Interval: 1H, Max Deviation: 9.75%, Max Deviation Interval End: 2022-11-08 19:33:51.330000
-Interval: 1D, Max Deviation: 24.24%, Max Deviation Interval End: 2022-06-14 01:44:10.965000
+Interval: 30min, Max Deviation: 9.08%, Max Deviation Interval End: 2022-06-15 18:45:46.831000
+Interval: 1H, Max Deviation: 10.16%, Max Deviation Interval End: 2022-06-15 18:45:46.831000
+Interval: 1D, Max Deviation: 25.70%, Max Deviation Interval End: 2022-06-14 02:00:21.170000
 
 
 
@@ -196,11 +16,11 @@ Symbol: FRAX
 Data Points: 3181208
 Date Range: 2022-02-07 02:35:06.781000 -- 2022-11-15 19:01:45.680000
 Average Interval: 7.65s
-Interval: 5min, Max Deviation: 13.45%, Max Deviation Interval End: 2022-09-28 22:14:54.098000
-Interval: 10min, Max Deviation: 13.42%, Max Deviation Interval End: 2022-09-28 22:19:54.147000
-Interval: 30min, Max Deviation: 13.56%, Max Deviation Interval End: 2022-09-28 22:00:01.110000
-Interval: 1H, Max Deviation: 13.79%, Max Deviation Interval End: 2022-09-28 23:09:54.646000
-Interval: 1D, Max Deviation: 13.28%, Max Deviation Interval End: 2022-09-28 22:00:01.110000
+Interval: 5min, Max Deviation: 13.45%, Max Deviation Interval End: 2022-09-28 22:14:41.251000
+Interval: 10min, Max Deviation: 13.45%, Max Deviation Interval End: 2022-09-28 22:14:41.251000
+Interval: 30min, Max Deviation: 13.79%, Max Deviation Interval End: 2022-09-28 22:00:01.110000
+Interval: 1H, Max Deviation: 13.79%, Max Deviation Interval End: 2022-09-28 22:00:01.110000
+Interval: 1D, Max Deviation: 14.09%, Max Deviation Interval End: 2022-09-28 22:00:01.110000
 
 
 Outliers for FRAX:
@@ -211,23 +31,23 @@ Outliers for FRAX:
 
 
 Symbol: FRAX outliers removed
-Interval: 5min, Max Deviation: 6.98%, Max Deviation Interval End: 2022-11-03 11:06:16.825000
-Interval: 10min, Max Deviation: 6.98%, Max Deviation Interval End: 2022-11-03 11:06:16.825000
-Interval: 30min, Max Deviation: 6.98%, Max Deviation Interval End: 2022-11-03 11:06:16.825000
-Interval: 1H, Max Deviation: 6.98%, Max Deviation Interval End: 2022-11-03 11:06:16.825000
-Interval: 1D, Max Deviation: 7.24%, Max Deviation Interval End: 2022-11-03 10:08:10.510000
+Interval: 5min, Max Deviation: 7.51%, Max Deviation Interval End: 2022-05-12 06:57:30.279000
+Interval: 10min, Max Deviation: 7.51%, Max Deviation Interval End: 2022-05-12 06:57:30.279000
+Interval: 30min, Max Deviation: 7.51%, Max Deviation Interval End: 2022-05-12 06:57:30.279000
+Interval: 1H, Max Deviation: 7.51%, Max Deviation Interval End: 2022-05-12 06:57:30.279000
+Interval: 1D, Max Deviation: 7.93%, Max Deviation Interval End: 2022-11-03 09:27:40.038000
 
 
 
 Symbol: sAVAX
-Data Points: 1451501
-Date Range: 2022-09-05 16:50:53.132000 -- 2022-12-02 21:18:54.465000
-Average Interval: 5.25s
-Interval: 5min, Max Deviation: 7.20%, Max Deviation Interval End: 2022-11-09 21:15:58.990000
-Interval: 10min, Max Deviation: 7.35%, Max Deviation Interval End: 2022-11-09 21:20:06.355000
+Data Points: 1540396
+Date Range: 2022-09-05 16:50:53.132000 -- 2022-12-09 12:12:46.236000
+Average Interval: 5.32s
+Interval: 5min, Max Deviation: 7.20%, Max Deviation Interval End: 2022-11-09 21:15:36.310000
+Interval: 10min, Max Deviation: 7.35%, Max Deviation Interval End: 2022-11-09 21:19:36.351000
 Interval: 30min, Max Deviation: 11.37%, Max Deviation Interval End: 2022-11-09 21:28:46.443000
-Interval: 1H, Max Deviation: 11.58%, Max Deviation Interval End: 2022-11-09 21:28:46.443000
-Interval: 1D, Max Deviation: 38.34%, Max Deviation Interval End: 2022-11-09 21:28:56.443000
+Interval: 1H, Max Deviation: 11.79%, Max Deviation Interval End: 2022-11-09 21:28:46.443000
+Interval: 1D, Max Deviation: 41.08%, Max Deviation Interval End: 2022-11-09 21:28:46.443000
 
 
 
@@ -237,7 +57,187 @@ Date Range: 2022-09-05 16:50:53.132000 -- 2022-11-15 19:01:45.680000
 Average Interval: 5.10s
 Interval: 5min, Max Deviation: 6.88%, Max Deviation Interval End: 2022-11-09 21:16:16.319000
 Interval: 10min, Max Deviation: 7.03%, Max Deviation Interval End: 2022-11-09 21:20:16.358000
-Interval: 30min, Max Deviation: 11.06%, Max Deviation Interval End: 2022-11-09 21:29:09.133000
-Interval: 1H, Max Deviation: 11.58%, Max Deviation Interval End: 2022-11-09 21:29:09.133000
-Interval: 1D, Max Deviation: 38.33%, Max Deviation Interval End: 2022-11-09 21:29:09.133000
+Interval: 30min, Max Deviation: 11.11%, Max Deviation Interval End: 2022-11-09 21:29:09.133000
+Interval: 1H, Max Deviation: 11.70%, Max Deviation Interval End: 2022-11-09 21:29:09.133000
+Interval: 1D, Max Deviation: 41.06%, Max Deviation Interval End: 2022-11-09 21:29:09.133000
+
+
+
+Symbol: ETH
+Data Points: 3516133
+Date Range: 2022-02-07 02:35:06.781000 -- 2022-12-09 12:31:46.306000
+Average Interval: 7.50s
+Interval: 5min, Max Deviation: 9.30%, Max Deviation Interval End: 2022-11-10 13:34:29.762000
+Interval: 10min, Max Deviation: 12.17%, Max Deviation Interval End: 2022-06-15 18:45:46.831000
+Interval: 30min, Max Deviation: 14.70%, Max Deviation Interval End: 2022-06-15 18:45:46.831000
+Interval: 1H, Max Deviation: 16.39%, Max Deviation Interval End: 2022-06-15 18:45:46.831000
+Interval: 1D, Max Deviation: 38.22%, Max Deviation Interval End: 2022-11-09 10:20:12.116000
+
+
+
+Symbol: USDT
+Data Points: 3516118
+Date Range: 2022-02-07 02:35:06.781000 -- 2022-12-09 12:31:46.306000
+Average Interval: 7.50s
+Interval: 5min, Max Deviation: 100.37%, Max Deviation Interval End: 2022-05-12 05:09:41.206000
+Interval: 10min, Max Deviation: 100.69%, Max Deviation Interval End: 2022-05-12 05:17:55.089000
+Interval: 30min, Max Deviation: 103.00%, Max Deviation Interval End: 2022-05-12 05:26:43.704000
+Interval: 1H, Max Deviation: 103.00%, Max Deviation Interval End: 2022-05-12 05:26:43.704000
+Interval: 1D, Max Deviation: 103.00%, Max Deviation Interval End: 2022-05-12 05:26:43.704000
+
+
+Outliers for USDT:
+{'source': {'binanceus': 'error', 'bitfinex': 'error', 'bitfinex2': 'error', 'bittrex': 'error', 'cex': 'error', 'coingecko': 'error', 'currencycom': 'error', 'ftx': 'error', 'kraken': 'error', 'okcoin': 'error', 'kyber': 'error', 'sushiswap': 0.49801987239337686, 'uniswap': 'error'}, 'timestamp': 1652332181206.0, 'value': 0.49801987239337686, 'timestamp_human': Timestamp('2022-05-12 05:09:41.206000128')}
+
+
+Symbol: USDT outliers removed
+Interval: 5min, Max Deviation: 3.11%, Max Deviation Interval End: 2022-05-12 07:22:02.081000
+Interval: 10min, Max Deviation: 3.20%, Max Deviation Interval End: 2022-05-12 07:22:02.081000
+Interval: 30min, Max Deviation: 3.30%, Max Deviation Interval End: 2022-05-12 07:22:02.081000
+Interval: 1H, Max Deviation: 3.30%, Max Deviation Interval End: 2022-05-12 07:22:02.081000
+Interval: 1D, Max Deviation: 4.96%, Max Deviation Interval End: 2022-05-12 07:22:02.081000
+
+
+
+Symbol: TJ_AVAX_USDC_LP
+Data Points: 1030057
+Date Range: 2022-10-05 09:37:30.113000 -- 2022-12-09 12:03:36.114000
+Average Interval: 5.46s
+Interval: 5min, Max Deviation: 2.58%, Max Deviation Interval End: 2022-11-10 13:37:29.800000
+Interval: 10min, Max Deviation: 2.79%, Max Deviation Interval End: 2022-11-10 13:38:09.809000
+Interval: 30min, Max Deviation: 3.76%, Max Deviation Interval End: 2022-11-08 18:22:00.620000
+Interval: 1H, Max Deviation: 4.46%, Max Deviation Interval End: 2022-11-08 18:22:00.620000
+Interval: 1D, Max Deviation: 14.45%, Max Deviation Interval End: 2022-11-09 21:30:06.451000
+
+
+
+Symbol: PNG_AVAX_USDC_LP
+Data Points: 1030057
+Date Range: 2022-10-05 09:37:30.113000 -- 2022-12-09 12:03:36.114000
+Average Interval: 5.46s
+Interval: 5min, Max Deviation: 2.58%, Max Deviation Interval End: 2022-11-10 13:37:29.800000
+Interval: 10min, Max Deviation: 2.80%, Max Deviation Interval End: 2022-11-10 13:37:29.800000
+Interval: 30min, Max Deviation: 3.76%, Max Deviation Interval End: 2022-11-08 18:22:00.620000
+Interval: 1H, Max Deviation: 4.46%, Max Deviation Interval End: 2022-11-08 18:22:00.620000
+Interval: 1D, Max Deviation: 14.55%, Max Deviation Interval End: 2022-11-09 21:30:06.451000
+
+
+
+Symbol: YY_TJ_AVAX_USDC_LP
+Data Points: 1029550
+Date Range: 2022-10-05 12:14:17.941000 -- 2022-12-09 12:03:36.114000
+Average Interval: 5.45s
+Interval: 5min, Max Deviation: 2.58%, Max Deviation Interval End: 2022-11-10 13:38:19.810000
+Interval: 10min, Max Deviation: 2.78%, Max Deviation Interval End: 2022-11-10 13:38:19.810000
+Interval: 30min, Max Deviation: 3.76%, Max Deviation Interval End: 2022-11-08 18:23:00.630000
+Interval: 1H, Max Deviation: 4.45%, Max Deviation Interval End: 2022-11-08 18:23:00.630000
+Interval: 1D, Max Deviation: 14.42%, Max Deviation Interval End: 2022-11-09 21:30:09.146000
+
+
+
+Symbol: MOO_TJ_AVAX_USDC_LP
+Data Points: 590216
+Date Range: 2022-10-30 12:58:22.300000 -- 2022-12-09 11:51:26.069000
+Average Interval: 5.85s
+Interval: 5min, Max Deviation: 2.58%, Max Deviation Interval End: 2022-11-10 13:38:19.810000
+Interval: 10min, Max Deviation: 2.78%, Max Deviation Interval End: 2022-11-10 13:38:19.810000
+Interval: 30min, Max Deviation: 3.76%, Max Deviation Interval End: 2022-11-08 18:23:00.630000
+Interval: 1H, Max Deviation: 4.45%, Max Deviation Interval End: 2022-11-08 18:23:00.630000
+Interval: 1D, Max Deviation: 14.43%, Max Deviation Interval End: 2022-11-09 21:30:09.146000
+
+
+
+Symbol: PNG
+Data Points: 2312386
+Date Range: 2022-07-03 05:54:13.253000 -- 2022-12-09 12:21:16.265000
+Average Interval: 5.95s
+Interval: 5min, Max Deviation: 25.21%, Max Deviation Interval End: 2022-09-12 14:12:46.058000
+Interval: 10min, Max Deviation: 38.18%, Max Deviation Interval End: 2022-09-12 14:17:23.682000
+Interval: 30min, Max Deviation: 42.07%, Max Deviation Interval End: 2022-09-12 14:33:36.289000
+Interval: 1H, Max Deviation: 51.28%, Max Deviation Interval End: 2022-09-12 14:42:03.928000
+Interval: 1D, Max Deviation: 67.56%, Max Deviation Interval End: 2022-11-14 19:29:29.057000
+
+
+
+Symbol: AVAX
+Data Points: 3516252
+Date Range: 2022-02-07 02:09:27.393000 -- 2022-12-09 12:31:46.306000
+Average Interval: 7.50s
+Interval: 5min, Max Deviation: 24.44%, Max Deviation Interval End: 2022-05-11 12:51:58.710000
+Interval: 10min, Max Deviation: 31.03%, Max Deviation Interval End: 2022-05-11 12:51:58.710000
+Interval: 30min, Max Deviation: 47.19%, Max Deviation Interval End: 2022-05-11 12:51:58.710000
+Interval: 1H, Max Deviation: 50.62%, Max Deviation Interval End: 2022-05-11 12:51:58.710000
+Interval: 1D, Max Deviation: 90.20%, Max Deviation Interval End: 2022-05-11 12:51:58.710000
+
+
+
+Symbol: YAK
+Data Points: 3496105
+Date Range: 2022-02-07 02:35:06.781000 -- 2022-12-09 12:27:46.291000
+Average Interval: 7.55s
+Interval: 5min, Max Deviation: 33.53%, Max Deviation Interval End: 2022-05-22 23:04:40.852000
+Interval: 10min, Max Deviation: 33.64%, Max Deviation Interval End: 2022-05-22 23:06:10.864000
+Interval: 30min, Max Deviation: 34.65%, Max Deviation Interval End: 2022-05-22 23:04:20.846000
+Interval: 1H, Max Deviation: 36.30%, Max Deviation Interval End: 2022-05-22 23:14:20.984000
+Interval: 1D, Max Deviation: 71.38%, Max Deviation Interval End: 2022-05-12 07:14:38.498000
+
+
+
+Symbol: QI
+Data Points: 2312386
+Date Range: 2022-07-03 05:54:13.253000 -- 2022-12-09 12:21:16.265000
+Average Interval: 5.95s
+Interval: 5min, Max Deviation: 17.80%, Max Deviation Interval End: 2022-10-15 22:44:36.648000
+Interval: 10min, Max Deviation: 23.95%, Max Deviation Interval End: 2022-11-23 18:34:31.909000
+Interval: 30min, Max Deviation: 45.76%, Max Deviation Interval End: 2022-11-23 18:39:03.743000
+Interval: 1H, Max Deviation: 47.88%, Max Deviation Interval End: 2022-11-23 18:39:03.743000
+Interval: 1D, Max Deviation: 66.93%, Max Deviation Interval End: 2022-11-23 22:30:02.175000
+
+
+
+Symbol: XAVA
+Data Points: 3496063
+Date Range: 2022-02-07 02:09:27.393000 -- 2022-12-09 12:27:46.291000
+Average Interval: 7.55s
+Interval: 5min, Max Deviation: 75.49%, Max Deviation Interval End: 2022-05-08 11:06:51.879000
+Interval: 10min, Max Deviation: 75.61%, Max Deviation Interval End: 2022-05-08 11:07:31.885000
+Interval: 30min, Max Deviation: 75.87%, Max Deviation Interval End: 2022-05-08 11:20:41.980000
+Interval: 1H, Max Deviation: 75.87%, Max Deviation Interval End: 2022-05-08 11:20:41.980000
+Interval: 1D, Max Deviation: 86.24%, Max Deviation Interval End: 2022-05-08 11:02:16.731000
+
+
+
+Symbol: LINK
+Data Points: 2312387
+Date Range: 2022-07-03 05:54:13.253000 -- 2022-12-09 12:21:16.265000
+Average Interval: 5.95s
+Interval: 5min, Max Deviation: 9.34%, Max Deviation Interval End: 2022-11-08 19:38:23.019000
+Interval: 10min, Max Deviation: 12.38%, Max Deviation Interval End: 2022-11-08 19:33:01.323000
+Interval: 30min, Max Deviation: 16.88%, Max Deviation Interval End: 2022-11-08 19:33:01.323000
+Interval: 1H, Max Deviation: 20.44%, Max Deviation Interval End: 2022-11-08 19:33:01.323000
+Interval: 1D, Max Deviation: 48.88%, Max Deviation Interval End: 2022-11-09 10:20:12.116000
+
+
+
+Symbol: USDC
+Data Points: 2706978
+Date Range: 2022-02-07 02:35:06.781000 -- 2022-12-09 12:21:16.265000
+Average Interval: 9.75s
+Interval: 5min, Max Deviation: 1.12%, Max Deviation Interval End: 2022-11-10 12:18:38.904000
+Interval: 10min, Max Deviation: 1.12%, Max Deviation Interval End: 2022-11-10 12:18:38.904000
+Interval: 30min, Max Deviation: 1.24%, Max Deviation Interval End: 2022-11-10 13:15:39.554000
+Interval: 1H, Max Deviation: 1.72%, Max Deviation Interval End: 2022-11-10 13:47:56.219000
+Interval: 1D, Max Deviation: 1.75%, Max Deviation Interval End: 2022-11-10 15:11:10.803000
+
+
+
+Symbol: YYAV3SA1
+Data Points: 1840234
+Date Range: 2022-08-16 11:58:16.848000 -- 2022-12-09 12:16:16.248000
+Average Interval: 5.40s
+Interval: 5min, Max Deviation: 7.28%, Max Deviation Interval End: 2022-09-18 21:12:01.895000
+Interval: 10min, Max Deviation: 7.86%, Max Deviation Interval End: 2022-09-18 21:12:01.895000
+Interval: 30min, Max Deviation: 8.25%, Max Deviation Interval End: 2022-09-18 21:12:01.895000
+Interval: 1H, Max Deviation: 9.54%, Max Deviation Interval End: 2022-11-09 21:29:16.446000
+Interval: 1D, Max Deviation: 33.85%, Max Deviation Interval End: 2022-11-09 21:29:16.446000
 
